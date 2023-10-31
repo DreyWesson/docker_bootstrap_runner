@@ -1,9 +1,9 @@
 services:
-  cpp:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: cpp
+    image: app
     stdin_open: true
     tty: true
     volumes:

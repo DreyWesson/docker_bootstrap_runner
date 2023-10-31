@@ -1,4 +1,4 @@
-ROM alpine:latest
+FROM alpine:latest
 
 # Update and install necessary packages
 RUN apk update && \

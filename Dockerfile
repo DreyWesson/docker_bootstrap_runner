@@ -1,23 +1,17 @@
-# FROM alpine:latest
-
-# # Update and install necessary packages
-# RUN apk update && \
-#     apk add --no-cache \
-#     build-base \
-#     valgrind \
-#     zsh
-
-# # Set the default shell to zsh
-# SHELL ["/bin/zsh", "-c"]
-
-FROM alpine:latest
+ROM alpine:latest
 
 # Update and install necessary packages
 RUN apk update && \
     apk add --no-cache \
     build-base \
     valgrind \
-    zsh
+    zsh \
+    gcc \
+    g++ \
+    libc-dev \
+    linux-headers \
+    libexecinfo-dev \
+    libc6-compat
     
 # Set the default shell to zsh
 SHELL ["/bin/zsh", "-c"]

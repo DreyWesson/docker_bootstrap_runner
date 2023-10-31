@@ -5,13 +5,7 @@ RUN apk update && \
     apk add --no-cache \
     build-base \
     valgrind \
-    zsh \
-    gcc \
-    g++ \
-    libc-dev \
-    linux-headers \
-    libexecinfo-dev \
-    libc6-compat
+    zsh
     
 # Set the default shell to zsh
 SHELL ["/bin/zsh", "-c"]

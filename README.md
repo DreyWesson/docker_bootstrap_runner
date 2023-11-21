@@ -12,7 +12,7 @@ docker-compose up -d
 To run the application within a specific service, execute the following command:
 
 ```bash
-docker-compose run <service_name> zsh
+docker-compose run app zsh
 ```
 
 ## Rebuilding with Local Changes

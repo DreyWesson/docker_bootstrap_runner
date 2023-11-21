@@ -33,6 +33,9 @@ RUN echo "ipv6" >> /etc/modules && \
     ln -sf /usr/bin/clang /usr/bin/cc && \
     ln -sf /usr/bin/clang++ /usr/bin/c++
 
+# Set the default shell to zsh
+SHELL ["/bin/zsh", "-c"]
+
 WORKDIR /app
 
 

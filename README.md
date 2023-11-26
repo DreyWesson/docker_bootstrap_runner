@@ -20,7 +20,7 @@ docker-compose run app zsh
 If you've made local changes and need to rebuild, use the following command:
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 # Deleting Docker Containers and Images
